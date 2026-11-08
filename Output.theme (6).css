@@ -1,0 +1,258 @@
+:root {
+  /*Dark mode*/
+  --dark-bg: transparent;
+  --dark-layer1: 255,255,255;
+  --dark-flyout: rgba(30,30,30);
+  --dark-select: 255,255,255;
+  --dark-accent: rgb(76, 194, 255);
+  --dark-accent-hovered: rgb(65, 163, 214); /*also disabled button*/
+  --dark-accent-font-color: black;
+  --dark-button: rgb(45,45,45);
+  --dark-button-border: rgb(60, 60, 60);
+  --dark-button-font-color: white;
+  --dark-dm-about: rgba(0,0,0,0.4);
+  --dark-background-accent: rgba(50,50,50,0.9);
+
+  /*Light mode*/
+  --light-bg: transparent;
+  --light-layer1: 255,255,255;
+  --light-flyout: rgb(255, 255, 255);
+  --light-select: 0,0,0;
+  --light-accent: rgb(0, 120, 212);
+  --light-accent-hovered: rgb(0, 94, 167); /*also disabled button*/
+  --light-accent-font-color: white;
+  --light-button: rgb(251,251,251);
+  --light-button-border: rgb(204, 204, 231);
+  --light-button-font-color: black;
+  --light-dm-about: rgba(255,255,255,0.35);
+  --light-background-accent: rgba(160,160,160,0.9);
+  
+  /* Titlebar */
+  --custom-app-top-bar-height: calc(24px + var(--space-sm)); 
+  --title-bar-icon: flex;
+}
+
+.theme-dark { 
+  --app-bg: var(--dark-bg);
+  
+  /*Layer 1*/
+  --background-primary: rgba(var(--dark-layer1),0.05); /* Activity Card Empty */
+  --background-base-low: rgba(var(--dark-layer1),0.05); /* Follow channel */
+  --background-secondary-alt: rgba(var(--dark-layer1),0.05);
+  --input-background: rgba(var(--dark-layer1),0.05);
+  --background-secondary: rgba(var(--dark-layer1),0.05);
+  --background-tertiary: rgba(var(--dark-layer1),0.06);
+  --channeltextarea-background: rgba(var(--dark-layer1),0.05);
+  --bg-mod-subtle: rgba(var(--dark-layer1),0.1);
+
+  /*Flyout*/
+  --background-floating: var(--dark-flyout); 
+
+  /*Select or hover*/
+  --layer1: var(--dark-layer1);
+  --flyout: var(--dark-flyout);
+  --background-modifier-selected: rgba(var(--dark-select),0.07);
+  --background-modifier-active: rgba(var(--dark-select),0.07);
+  --background-modifier-hover: rgba(var(--dark-select),0.05);
+
+  /*variables*/
+  --accent: var(--dark-accent);
+  --accent-hovered: var(--dark-accent-hovered);
+  --accent-font: var(--dark-accent-font-color);
+  --button: var(--dark-button);
+  --button-border: var(--dark-button-border);
+  --button-font-color: var(--dark-button-font-color);
+  --dm-about: var(--dark-dm-about);
+  --background-accent: var(--dark-background-accent);
+} 
+.theme-light{
+  --app-bg: var(--light-bg); 
+
+  /* Layer 1 */
+  --background-primary: rgba(var(--light-layer1),0.7); /* Activity Card Empty */
+  --background-base-low: rgba(var(--light-layer1),0.7); /* Follow channel */
+  --background-surface-higher: rgba(var(--light-layer1), 0.4);
+  --background-secondary-alt: rgba(var(--light-layer1), 0.1);
+  --input-background: rgba(var(--light-layer1), 0.7); 
+  --background-secondary: rgba(var(--light-layer1), 0.7);
+  --background-tertiary: rgba(var(--light-layer1), 0.7);
+  --channeltextarea-background: rgba(var(--light-layer1), 0.4);
+  --bg-mod-subtle: rgba(0,0,0,0.1);
+
+  /* Flyout */
+  --background-floating: var(--light-flyout);
+
+  /* Select or hover */
+  --layer1: var(--light-layer1);
+  --flyout: var(--light-flyout);
+  --background-modifier-selected: rgba(var(--light-select), 0.07);
+  --background-modifier-active: rgba(var(--light-select), 0.07);
+  --background-modifier-hover: rgba(var(--light-select), 0.05);
+
+  /* Variables */
+  --accent: var(--light-accent);
+  --accent-hovered: var(--light-accent-hovered);
+  --accent-font: var(--light-accent-font-color);
+  --button: var(--light-button);
+  --button-border: var(--light-button-border);
+  --button-font-color: var(--light-button-font-color);
+  --dm-about: var(--light-dm-about);
+  --background-accent: var(--light-background-accent);
+}
+
+.app_QbT-Jy,
+.bg_Fd0FEH,
+.appMount_gEkNtR,
+.wrapper_5dqHTG,
+.container_zrUwGA, .tabBody_zrUwGA, .bg_Fd0FEH, .app_QbT-Jy, .appMount_gEkNtR, /* BASE */
+.chat_z_gUBg,
+.chatContent_z_gUBg, /*Server Chat*/
+.privateChannels_u88IQl, .scroller_Bce46W, .privateChannels_u88IQl, /*DMs Sidebar*/
+.container_GNEh_C, .nowPlayingColumn_zrUwGA, .themed_ybUK7Z, /*DMs misc*/
+.container_GNEh_C,
+.container_zrUwGA,
+.container_H5ozaj, .sidebar_pog62O, .sidebar_pog62O:after, .wrapper_5dqHTG /*Server Sidebar*/,
+.visual-refresh .clickable_f37cb1, .visual-refresh .hasBanner_XH4OpX .header_XH4OpX, /*Server name*/
+:where(.visual-refresh) .themedBackground_2x8-Qn, /*Server Textarea*/
+.visual-refresh .container_BkGrJJ, /* Forum */
+.scroller_jkJlMe, .container_GQJi50, .theme-light .gradient_-6JdM0, .backdrop_Y0eJLL /*Discovery*/,
+.visual-refresh .contentRegionScroller_jnk11m, .visual-refresh .sidebarRegionScroller_jnk11m, .visual-refresh .standardSidebarView_jnk11m, .contentRegion_jnk11m, .layer_Fd0FEH /*Settings*/, 
+.fieldList_a9178b,
+.children_ybUK7Z:after,
+.wrapper_gFyPwI, .wrapper_oITdBA /* Skeleton loading */,
+.visual-refresh .content_4TfzT5 /*Divider*/,
+.chatGradient_8AE1Qq, .chatTypingGradientNotAtBottom_8AE1Qq, .chatTypingGradientAtBottom_8AE1Qq /* Chatbox gradient */,
+.container_UPjGEs /* Thread member list */,
+.channelChatWrapper_hbKzX7, .wrapper_hbKzX7 /* Voice Chat message panel */ {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+
+/*Server*/
+.channelTextArea_z_gUBg {
+  background-color: var(--channeltextarea-background);
+}
+
+/*Buttons*/
+.lookFilled_9OQtot .colorBrand_9OQtot {
+  background-color: var(--accent);
+  color: var(--accent-font);
+}
+.lookFilled_9OQtot .colorBrand_9OQtot:hover {
+  background-color: var(--accent-hovered);
+}
+.lookFilled_9OQtot .colorBrand_9OQtot:disabled{
+  background-color: var(--accent-hovered);
+}
+.lookFilled_9OQtot .colorPrimary_9OQtot, .lookFilled_9OQtot .colorPrimary_9OQtot:disabled {
+  background-color: var(--button);
+  color: var(--button-font-color);
+  outline: solid var(--button-border) 1.5px;
+}
+
+/*Toggle*/
+.container__3f21e .checked__3f21e{
+  background-color: var(--accent) !important;
+}
+.container__3f21e .checked__3f21e:hover{
+  background-color: var(--accent-hovered) !important;
+}
+
+/*Special Flyout*/
+.messagesPopoutWrap_6bgemo,
+.container__2692d,
+.container__9497c,
+.contentWrapper_58b0l2,
+.header_rfDq2B,
+.wrapper_gFyPwI,
+.popout_uFkqU2,
+.wrapper_-sZhZn,
+.quickswitcher_a1DYes,
+.vc-notification-root,
+.container_quI2qP, .reactors_quI2qP,
+.emojiRow_XTvD56 .emojiAliasInput_e7d73e .emojiInput_e7d73e,
+.main__949ab,
+.streamPreview__6da2d,
+.menu_M3qk4j /* Context menu */ {
+  background-color: var(--flyout);
+}
+
+/*Thread*/
+.container_FrbQJp {
+  background-color: rgba(var(--layer1),0.05);
+}
+
+/*Misc*/
+.overlayBackground_c69a7b {
+  background-color: var(--dm-about);
+}
+.resizeHandle_FrbQJp {
+  width: 0px;
+}
+.container_g7esM5 { /*Server Activity Status*/
+  background-color: var(--background-primary);
+  outline: solid 1px rgba(255,255,255,0.1);
+}
+.scroller_a1DYes { /*Global search*/
+  border-radius: 5px;
+  margin-right: 0px;
+}
+.form_z_gUBg {
+  margin-top: 0;
+}
+.jumpToPresentBar_j9Vvzj {
+  padding-bottom: 0;
+}
+.lottieIcon_69Onuk.buttonIcon_9U6LUN { /* VoiceChat Soundboard icon */
+    --__lottieIconColor: white !important;
+}
+.container_9U6LUN { /* VoiceChat border radius */
+    border-radius: 8px;
+}
+.title_3zSH5d, .leading_3zSH5d, .trailing_3zSH5d, .winButtons_3zSH5d { /* Titlebar */
+  display: var(--title-bar-icon);
+}
+.sidebarListRounded_pog62O { /* Remove sidebar backdrop-filter    WHO PUTS BACKDROP FILTER HERE?? */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.stackedBars_2x8-Qn { /* Reply Bar */
+  background: transparent;
+}
+.container_67Xl1N { /* Discovery header fix */
+  padding-top: var(--custom-channel-header-height);
+}
+.overlay_Y0eJLL { /* Discovery header fix */
+  top: 0px;
+}
+.outer_ERB-Vv { /* Activity Card */
+  background-color: var(--background-primary); 
+}
+.user-profile-sidebar { /* User Profile sidebar */
+  background: var(--background-primary);
+}
+.embedFull_XyW1ZT { /* Embed */
+  background: var(--background-primary);
+}
+.panels_pog62O { /* User status panel fix, use original color from --background-base-low so it won't get override */
+    background: var(--background-gradient-highest, color-mix(in oklab,var(--neutral-66) 100%,var(--custom-theme-base-color,#000) var(--custom-theme-base-color-amount,0%)));
+}
+
+/*meow*/
+:root {
+  --custom-channel-members-bg: transparent;
+  --bg-base-primary: transparent;
+  --home-background: transparent;
+  --scrollbar-auto-track: transparent;
+  --deprecated-store-bg: transparent;
+}
+
+body{
+  background-color: var(--app-bg) !important;
+}
+
+/* Fix semicolon bug */
+.app_YRXZu0 {
+  color: transparent;
+}
